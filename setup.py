@@ -31,7 +31,7 @@ setup(
   version = find_version('odictliteral.py'),
   description = 'A tidier way of coding literal OrderedDicts',
   long_description = long_description,
-  packages=find_packages(exclude=["contrib", "docs", "tests*"]),
+  py_modules=['odictliteral'],
 
   url = 'https://github.com/ajtowns/odictliteral',
 
