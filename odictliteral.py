@@ -37,6 +37,6 @@ def odict_repr(self):
     if len(self) == 0:
         return "odict()"
     else:
-        return "odict[%s]" % (", ".join("%s: %s" % (k,v) for k,v in self.items()),)
+        return "odict[%s]" % (", ".join("%r: %r" % (k,v) for k,v in self.items()),)
 
 odict = odictType(str('odict'), (OrderedDict,), {"__repr__": odict_repr})
